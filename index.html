@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Side Bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="side-bar">
+        <li class="menubtn" onclick="hideBar()">
+          <a href="">
+            <img
+              src="./icons/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+            />
+          </a>
+        </li>
+        <li><a href="#">Blog </a></li>
+        <li><a href="#">Prodects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Form</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">SideBar</a></li>
+        <li class="hideonmobile"><a href="#">Blog </a></li>
+        <li class="hideonmobile"><a href="#">Prodects</a></li>
+        <li class="hideonmobile"><a href="#">About</a></li>
+        <li class="hideonmobile"><a href="#">Form</a></li>
+        <li class="hideonmobile"><a href="#">Login</a></li>
+        <li class="hidemenu" onclick="showSidebar()">
+          <a href="#">
+            <img
+              src="./icons/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      function showSidebar() {
+        let sidebar = document.querySelector(".side-bar");
+        sidebar.style.display = "flex";
+      }
+      function hideBar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
